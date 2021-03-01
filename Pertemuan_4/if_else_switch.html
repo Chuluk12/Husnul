@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if_else</title>
+</head>
+<body>
+
+    <h1> if else </h1>
+    <span id="ifelse"></span>
+    <script>
+
+    function Nilai()
+    {
+        let nilai_siswa = 100 ;
+
+        if (nilai_siswa >= 85 && nilai_siswa <=100) {
+            return('A');
+        }
+        else if (nilai_siswa >= 70 && nilai_siswa <=84) {
+            return('B');
+        }
+        else if (nilai_siswa >= 60 && nilai_siswa <=69) {
+            return('C');
+        }
+        else if (nilai_siswa >= 40 && nilai_siswa <=59) {
+            return('D');
+        }
+        else if (nilai_siswa >= 30 && nilai_siswa <=39) {
+            return('E');
+        }
+        else if (nilai_siswa <= 30) {
+            return('F');
+        }
+    }
+    document.getElementById('ifelse').innerHTML = Nilai()
+    </script>
+</body>
+</html>

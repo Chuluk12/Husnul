@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<body>
+    <h1>Switch</h1>
+    <span id="cek"></span>
+
+    <script>
+        function cek(){
+                var nilai = "100";
+                
+                 switch (nilai) {
+                 case "100":
+                 case "90" :
+                 return ('a');
+                 break;
+                 case "80": 
+                 case "70": 
+                 return('b');
+                 break;
+                 case "60":
+                 case "50": 
+                 return('c');
+                 break;
+                case "40":
+                case "30": 
+                 return('d');
+                 break;
+                 default:
+                
+                 return("nilai tidak terdaftar");
+                 }
+                }
+        document.getElementById('cek').innerHTML = cek()
+    </script>
+</body>
+</html>

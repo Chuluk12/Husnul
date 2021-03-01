@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    
+<body>
+      
+        <!--Luas Lingkaran  -->
+        <h3>Luas Lingkaran</h3>
+        <p>Maukan Nilai </p>
+        <input type="text" id="p">
+        <p>masukan nilai</p>
+        <input type="text" id="n">
+        <p>masukan rumus </p>
+        <input type="text" id="kostanta" oninput="hasil()">
+
+        <p>Hasil</p>
+        <span id="hasil"></span>
+
+        <!-- Persegi Panjang -->
+        <h3>Persegi</h3>
+        <p>masukan nilai</p>
+        <input type="text"  id="sisi1">
+        <p>masukan nilai</p>
+        <input type="text" id="sisi2" oninput="hasil2()">
+
+        <p>Hasil</p>
+        <span id="hasil2"></span>
+        
+        <!-- Luas Segitiga -->
+        <h3>Luas Segitiga</h3>
+        <p>masukan nilai</p>
+        <input type="text"  id="a">
+        <p>masukan nilai</p>
+        <input type="text" id="t">
+        <p>masukan rumus</p>
+        <input type="text" id="l" oninput="hasil3()">
+
+        <p>Hasil</p>
+        <span id="hasil3"></span>
+
+      <script>
+      //  Luas Lingkaran 
+
+        function hasil()
+        {
+          let p = document.getElementById('p').value;
+          let n = document.getElementById('n').value;
+          let kostanta = document.getElementById('kostanta').value;
+
+          let hasil = p * n * kostanta ;
+          document.getElementById('hasil').innerHTML = hasil;
+        }
+
+      </script>
+
+       
+      <script>
+
+        // Luas Persegi
+        function hasil2()
+        {
+          let sisi1 = document.getElementById('sisi1').value;
+          let sisi2  = document.getElementById('sisi2').value;
+
+          let hasil2 = sisi1 * sisi2 ;
+          document.getElementById('hasil2').innerHTML = hasil2;
+        }
+
+      </script>
+      
+      <script>
+
+         // Luas Segitiga
+         function hasil3()
+         {
+          let a = document.getElementById('a').value;
+          let b = document.getElementById('t').value;
+          let c = document.getElementById('l').value;
+
+          let hasil3 = a * b * c ;
+          document.getElementById('hasil3').innerHTML = hasil3;
+         }
+      </script>
+
+  
+
+  </body>
+
+</html>
