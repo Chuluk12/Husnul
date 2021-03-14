@@ -22,65 +22,61 @@
         <button onclick="DataList()">Button</button>
         <span id="hasil"></span>
         <script>
-            let user = []
-           function DataList () 
-        {
-              let title = document.getElementById('title').value
-              user.push(
-              
-            {
-              userId: 1,
-              id: 1,
-              title: 'delectus aut autem',
-              completed: false
-            },
-            {
-              userId: 1,
-              id: 2,
-              title: "quis ut nam facilis et officia qui",
-              completed: false
-            },
+            let user = 
+            function DataList () 
           {
-              userId: 1,
-              id: 3,
-              title: "quis ut nam facilis et officia qui",
-              completed: true
-            },
-            {
-              userId: 1,
-              id: 2,
-              title: "quis ut nam facilis et officia qui",
-              completed: false
-            },
-            
-              )
-          
-          let templateHTML = ""
-          let templateStatus = "" 
-
-              for (let index = 0; index < user.length; index++) 
+                  let title = document.getElementById('title').value
+                  user.push(
+                  
+                {
+                  userId: 1,
+                  id: 1,
+                  title: 'delectus aut autem',
+                  completed: false
+                },
+                {
+                  userId: 1,
+                  id: 2,
+                  title: "quis ut nam facilis et officia qui",
+                  completed: false
+                },
               {
-                if(user[index].completed == true) {
-                  templateStatus = `<span class="succes">Selesai</span>`
-                }
-                else {
-                  templateStatus = `<span class="failed">Belum Selesai</span>`
-                }
+                  userId: 1,
+                  id: 3,
+                  title: "quis ut nam facilis et officia qui",
+                  completed: true
+                },
+                {
+                  userId: 1,
+                  id: 2,
+                  title: "quis ut nam facilis et officia qui",
+                  completed: false
+                },
                 
-                if((user[index].id % 2) == 0) {
-                  templateHTML += `${user[index].title}<br> ${templateStatus}<br><br>`
-                }
-                else {
-
-                }
-                
-              }  
-              document.getElementById('hasil').innerHTML = templateHTML
-            }
-        
-            
-           
+                  )
               
+              let templateHTML = ""
+              let templateStatus = "" 
+
+                  for (let index = 0; index < user.length; index++) 
+                  {
+                    if(user[index].completed == true) {
+                      templateStatus = `<span class="succes">Selesai</span>`
+                    }
+                    else {
+                      templateStatus = `<span class="failed">Belum Selesai</span>`
+                    }
+                    
+                    if((user[index].id % 2) == 0) {
+                      templateHTML += `${user[index].title}<br> ${templateStatus}<br><br>`
+                    }
+                    else {
+
+                    }
+                    
+                  }  
+                  document.getElementById('hasil').innerHTML = templateHTML
+          }
 
  </script>
 </body>
